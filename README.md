@@ -11,12 +11,32 @@ Este projeto simula uma biblioteca com funcionalidades de cadastro de livros, us
 - Listagem de usuários e seus empréstimos
 - Tratamento de erros
 
+### Como executar o projeto
 
-#### > Execute o projeto com:
+##### > Crie o ambiente virtual (opcional):
+```bash
+python -m venv venv
+```
+
+##### > Ative o ambiente virutal:
+```bash
+WINDOWSN:
+venv\Scripts\activate
+
+LINUX:
+source venv/bin/activate
+```
+
+##### > Instale as dependencias:
+```bash
+pip install -r requirements.txt
+```
+
+##### > Execute o projeto com:
 ```bash
 python main.py
 ```
-#### > Execute os testes com:
+##### > Execute os testes com:
 
 ```bash
 pytest
