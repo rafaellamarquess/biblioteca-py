@@ -46,3 +46,41 @@ ou:
 ```bash
 python -m pytest
 ```
+
+#### Como gerar diagrama UML
+
+Pré-requisitos
+
+Python (com pylint instalado)
+Graphviz (para renderizar as imagens geradas)
+
+Como instalar o Graphviz
+
+No Windows:
+Baixe e instale a versão apropriada em https://graphviz.org/download/
+
+No Linux:
+
+```bash
+sudo apt-get install graphviz
+```
+
+No MacOS (via Homebrew):
+
+```bash
+brew install graphviz
+```
+
+Gerar o diagrama com pyreverse
+
+1.Instale o pylint:
+
+```bash
+pip install pylint
+```
+
+2️. Gere o diagrama
+
+```bash
+pyreverse png -p BibliotecaProjeto -ASmy
+```

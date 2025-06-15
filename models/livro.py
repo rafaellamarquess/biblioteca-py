@@ -1,6 +1,8 @@
 from exceptions.erros import LivroNaoDisponivelError
 
 
+from exceptions.erros import LivroNaoDisponivelError
+
 class Livro:
     """
     Representa um livro na biblioteca, contendo informações básicas
@@ -37,6 +39,7 @@ class Livro:
         Marca o livro como disponível, sinalizando que foi devolvido.
         """
         self.disponivel = True
+
 
 
 # ================================

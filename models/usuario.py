@@ -1,5 +1,5 @@
 from exceptions.erros import EmprestimoNaoEncontradoError
-
+from models.emprestimo import Emprestimo  # ajuste o caminho conforme sua estrutura real
 
 class Usuario:
     """
@@ -17,14 +17,14 @@ class Usuario:
         """
         self.nome = nome
         self.email = email
-        self.emprestimos = []
+        self.emprestimos: list[Emprestimo] = []
 
-    def adicionar_emprestimo(self, emprestimo):
+    def adicionar_emprestimo(self, emprestimo: Emprestimo):
         """
         Adiciona um novo empréstimo à lista de empréstimos do usuário.
 
         Args:
-            emprestimo: Instância de empréstimo a ser adicionada.
+            emprestimo (Emprestimo): Instância de empréstimo a ser adicionada.
         """
         self.emprestimos.append(emprestimo)
 
